@@ -63,7 +63,8 @@ class Drupal_Sniffs_Commenting_InlineCommentSniff implements PHP_CodeSniffer_Sni
             $phpcsFile->addError($error, $stackPtr);
         }
 
-        if (substr($tokens[$stackPtr]['content'], 0 ,3) != '// ') {
+        if (2 < strlen(trim($tokens[$stackPtr]['content']))
+            && substr($tokens[$stackPtr]['content'], 0 ,3) != '// ') {
             $error  = 'Missing space after the // ';
             $phpcsFile->addError($error, $stackPtr);
         }
