@@ -28,4 +28,4 @@ Please cross check with [http://drupal.org/coding-standards](http://drupal.org/c
 [http://drupal.org/project/coder](http://drupal.org/project/coder) if the validation is correct
 
 Known Issues:
-Documentation Tags just rarely supported - there are many missing / disabled sniffs
+Documentation Tags just barely supported - there are many missing / disabled sniffs
